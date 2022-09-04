@@ -1,1 +1,60 @@
-// Todo : landing page urrutia
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Urrutia - Gestion Privée</title>
+    <link rel="stylesheet" href="./style.css">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<script>
+		function toggleLegal() {
+			var x = document.getElementById("legal-content");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+				window.scrollTo(0, document.body.scrollHeight);
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
+  </head>
+  <body>
+	<img class="logo" src="logo.png" alt="Endjoy Logo">
+    <div class="caption">
+		La gestion privée <span class="gold">modernisée</span>, arrive bientôt sur votre smartphone.
+	</div>
+    <div class="contact">
+		Clients ou CGP, contactez-nous pour en savoir plus : <br>
+		<a href="mailto:contact@urrutia.fr">contact@urrutia.fr</a>
+	</div>
+	<div>
+		<div class="legal" onclick="toggleLegal()">Mentions légales</div>
+		<div id="legal-content" style="display: none;" onclick="toggleLegal()">
+			<b>Editeur</b><br><br>
+			Le site est édité par l'entreprise "Eliomy - Vivien Haëse" dont le siège social est situé 15 rue des Halles, 75001 Paris (SIREN : 911 338 770 - Ile-de-France).
+			Responsable de publication : Vivien Haëse, Responsable.
+			<br><br>
+			Nous contacter: hello@eliomy.fr
+			<br><br>
+			Les éléments d'identification de l'éditeur sont conservés par le fournisseur du nom de domaine, conformément à la loi.
+			<pre>
+OVH
+140, quai du Sartel
+59100 Roubaix
+France
+Téléphone :+33 8 99 70 17 61
+Courrier électronique : tech@ovh.net
+			</pre>
+		</div>
+	</div>
+  </body>
+</html>
