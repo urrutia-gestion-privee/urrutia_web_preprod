@@ -2697,6 +2697,7 @@ a.dropdown-toggle::after {
     user-select: none;
     /*pointer-events: none;*/
     text-align: center;
+    z-index: 2;
 }
 
 
@@ -2996,6 +2997,11 @@ a.dropdown-toggle::after {
 
 .dark-gradient {
     background: rgba(0, 0, 0, 0.4);
+}
+
+.urrutia-header {
+    background: url(../images/banner1-4.jpg) no-repeat;
+    background-size: cover !important;
 }
 
 .bg-parallax-1 {
@@ -3992,10 +3998,18 @@ iframe {
 
 .overlay-dark {
     background-image: none;
-    background-color: #000;
+    background-color: #011C34;
     z-index: 1;
     visibility: visible;
 }
+
+.overlay-dark2 {
+    background-image: none;
+    background-color: #011C34;
+    z-index: 1;
+    visibility: visible;
+}
+
 .overlay-gray {
     background-image: none;
     background-color: #333333;
@@ -6644,6 +6658,7 @@ ul.latest_news li a:focus+span.defaultcolor {
     }
     #particles-text-morph {
         width: 100% !important;
+        z-index: 2;
     }
 }
 
