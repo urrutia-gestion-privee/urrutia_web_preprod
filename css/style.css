@@ -3126,7 +3126,7 @@ a.dropdown-toggle::after {
 }
 
 .testimonial-bg {
-    background: url(../images/testimonial-bg.jpg) no-repeat;
+    background: url(../images/counter-bg.jpg) no-repeat;
 }
 
 .contact-banner::before,
@@ -4277,7 +4277,7 @@ h4.darkcolor {
 
 .testimonial-wrapp:hover .testimonial-text::before {
     top: 60%;
-    transform: translate(-50%, -50%) scale(20);
+    transform: translate(-50%, -50%) scale(30);
 }
 
 .testimonial-icon {
