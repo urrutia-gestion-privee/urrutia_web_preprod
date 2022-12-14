@@ -68,7 +68,7 @@
 
 
 /*Global Styling*/
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800|Open+Sans:300,400,600,700');
 body {
     font-size: 15px;
@@ -81,6 +81,11 @@ body {
 ::selection{
     background: rgba(3, 169, 245, 0.5) !important;
     color: #fff;
+}
+
+.hand {
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
 }
 
 table,
@@ -438,6 +443,10 @@ p {
 
 .bgdark {
     background: #011C34;
+}
+
+.bggold {
+    background: #E4C99C;
 }
 
 .whitecolor {
