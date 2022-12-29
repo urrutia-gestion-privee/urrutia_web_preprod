@@ -68,7 +68,6 @@
 
 
 /*Global Styling*/
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800|Open+Sans:300,400,600,700');
 body {
     font-size: 15px;
@@ -84,8 +83,7 @@ body {
 }
 
 .hand {
-    font-family: 'Courgette', cursive;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 table,
