@@ -68,7 +68,7 @@
 
 
 /*Global Styling*/
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800|Open+Sans:300,400,600,700');
 body {
     font-size: 15px;
@@ -84,8 +84,8 @@ body {
 }
 
 .hand {
-    font-family: 'Caveat', cursive;
-    font-size: 22px;
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
 }
 
 table,
@@ -170,7 +170,7 @@ h6 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 p.title {
@@ -1558,6 +1558,18 @@ ul.social-icons.white li a:focus {
 
 .btnprimary {
     background: #E4C99C;
+    color: #fff;
+}
+
+
+.gradient-gold {
+    -webkit-background-size: 200% auto;
+    background-size: 200% auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(#D09E45), color-stop(5%, #D09E45), to(#E4C99C));
+    background-image: -webkit-linear-gradient(left, #D09E45 0%, #D09E45 5%, #E4C99C 100%);
+    background-image: -moz-linear-gradient(left, #D09E45 0%, #D09E45 5%, #E4C99C 100%);
+    background-image: -o-linear-gradient(left, #D09E45 0%, #D09E45 5%, #E4C99C 100%);
+    background-image: linear-gradient(to right, #D09E45 0%, #D09E45 5%, #E4C99C 100%);
     color: #fff;
 }
 
@@ -6553,7 +6565,7 @@ ul.latest_news li a:focus+span.defaultcolor {
         font-size: 2.5rem;
     }
     p {
-        font-size: 13px;
+        font-size: 15px;
     }
     .navbar-expand-lg>.container,
     .navbar-expand-lg>.container-fluid {
