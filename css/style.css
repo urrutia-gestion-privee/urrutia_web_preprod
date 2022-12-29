@@ -4616,10 +4616,12 @@ h4.darkcolor {
 #partners-slider .logo-item,
 #partners-slider .logo-item>img {
     display: inline-block;
+    
 }
 
 .logo-item>img {
-    width: 98%;
+    width: auto !important;
+    height: 100% !important;
     position: absolute;
     top: 50%;
     left: 50%;
