@@ -4598,12 +4598,15 @@ h4.darkcolor {
 
 /* ----- Partner ----- */
 
-#partners-slider .item {
+#partners-slider .item,
+#local-slider .item {
     text-align: center;
 }
 
 #partners-slider .item,
-#partners-slider .logo-item {
+#partners-slider .logo-item,
+#local-slider .item,
+#local-slider .logo-item {
     position: relative;
 }
 
@@ -4613,10 +4616,17 @@ h4.darkcolor {
     overflow: hidden;
 }
 
+#local-slider .logo-item {
+    width: 100px;
+    height: 80px;
+    overflow: hidden;
+}
+
 #partners-slider .logo-item,
-#partners-slider .logo-item>img {
+#partners-slider .logo-item,
+#local-slider .logo-item>img,
+#local-slider .logo-item>img {
     display: inline-block;
-    
 }
 
 .logo-item>img {

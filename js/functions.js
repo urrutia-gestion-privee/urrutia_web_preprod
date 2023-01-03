@@ -716,6 +716,35 @@ jQuery($=> {
         nav: false,
         responsive: {
             1200: {
+                items: 4,
+            },
+            991: {
+                items: 4,
+            },
+            767: {
+                items: 3,
+            },
+            480: {
+                items: 2,
+            },
+            0: {
+                items: 1,
+            },
+        }
+    });
+
+    $("#local-slider").owlCarousel({
+        items: 5,
+        autoplay: 1500,
+        smartSpeed: 1500,
+        autoplayHoverPause: true,
+        slideBy: 1,
+        loop: true,
+        margin: 30,
+        dots: false,
+        nav: false,
+        responsive: {
+            1200: {
                 items: 5,
             },
             991: {
@@ -733,196 +762,197 @@ jQuery($=> {
         }
     });
 
-    /*Testimonials*/
-    $("#testimonial-slider").owlCarousel({
-        items: 1,
-        autoplay: false,
-        autoplayHoverPause: true,
-        mouseDrag: false,
-        loop: true,
-        margin: 30,
-        animateIn: "fadeIn",
-        animateOut: "fadeOut",
-        dots: false,
-        nav: true,
-        navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
-        responsive: {
-            980: {
-                items: 1,
-            },
-            600: {
-                items: 1,
-            },
-            320: {
-                items: 1,
-            },
-        }
-    });
-    //gallery detail slider
-    $("#carousel-gallery-detail").owlCarousel({
-        items: 1,
-        autoplay: false,
-        mouseDrag: true,
-        loop: true,
-        margin: 0,
-        dots: false,
-        nav: true,
-        responsive: {
-            980: {
-                items: 1,
-            },
-            600: {
-                items: 1,
-            },
-            320: {
-                items: 1,
-            },
-        }
-    });
-    //main slider in pages
-    $("#testimonial-main-slider").owlCarousel({
-        items: 3,
-        autoplay: 2500,
-        autoplayHoverPause: true,
-        loop: true,
-        margin: 0,
-        dots: true,
-        nav: false,
-        responsive: {
-            1280: {
-                items: 3,
-            },
-            980: {
-                items: 3,
-            },
-            600: {
-                items: 2,
-            },
-            320: {
-                items: 1,
-            },
-        }
-    });
+    // /*Testimonials*/
+    // $("#testimonial-slider").owlCarousel({
+    //     items: 1,
+    //     autoplay: false,
+    //     autoplayHoverPause: true,
+    //     mouseDrag: false,
+    //     loop: true,
+    //     margin: 30,
+    //     animateIn: "fadeIn",
+    //     animateOut: "fadeOut",
+    //     dots: false,
+    //     nav: true,
+    //     navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
+    //     responsive: {
+    //         980: {
+    //             items: 1,
+    //         },
+    //         600: {
+    //             items: 1,
+    //         },
+    //         320: {
+    //             items: 1,
+    //         },
+    //     }
+    // });
+    // //gallery detail slider
+    // $("#carousel-gallery-detail").owlCarousel({
+    //     items: 1,
+    //     autoplay: false,
+    //     mouseDrag: true,
+    //     loop: true,
+    //     margin: 0,
+    //     dots: false,
+    //     nav: true,
+    //     responsive: {
+    //         980: {
+    //             items: 1,
+    //         },
+    //         600: {
+    //             items: 1,
+    //         },
+    //         320: {
+    //             items: 1,
+    //         },
+    //     }
+    // });
+    // //main slider in pages
+    // $("#testimonial-main-slider").owlCarousel({
+    //     items: 3,
+    //     autoplay: 2500,
+    //     autoplayHoverPause: true,
+    //     loop: true,
+    //     margin: 0,
+    //     dots: true,
+    //     nav: false,
+    //     responsive: {
+    //         1280: {
+    //             items: 3,
+    //         },
+    //         980: {
+    //             items: 3,
+    //         },
+    //         600: {
+    //             items: 2,
+    //         },
+    //         320: {
+    //             items: 1,
+    //         },
+    //     }
+    // });
 
     //main slider in pages
-    $("#price-slider").owlCarousel({
-        items: 3,
-        autoplay: false,
-        loop: false,
-        margin: 30,
-        padding: 0,
-        dots: true,
-        nav: false,
-        responsive: {
-            1280: {
-                items: 3,
-            },
-            980: {
-                items: 3,
-            },
-            600: {
-                items: 2,
-            },
-            0: {
-                items: 1,
-            },
-        }
-    });
+    // $("#price-slider").owlCarousel({
+    //     items: 3,
+    //     autoplay: false,
+    //     loop: false,
+    //     margin: 30,
+    //     padding: 0,
+    //     dots: true,
+    //     nav: false,
+    //     responsive: {
+    //         1280: {
+    //             items: 3,
+    //         },
+    //         980: {
+    //             items: 3,
+    //         },
+    //         600: {
+    //             items: 2,
+    //         },
+    //         0: {
+    //             items: 1,
+    //         },
+    //     }
+    // });
 
 
-    /*Our Team*/
-    $("#ourteam-slider").owlCarousel({
-        items: 4,
-        margin: 0,
-        dots: false,
-        nav: false,
-        responsive: {
-            1280: {
-                items: 4,
-            },
-            768: {
-                items: 3,
-            },
-            520: {
-                items: 2,
-            },
-            0: {
-                items: 1,
-            },
-        }
-    });
+    // /*Our Team*/
+    // $("#ourteam-slider").owlCarousel({
+    //     items: 4,
+    //     margin: 0,
+    //     dots: false,
+    //     nav: false,
+    //     responsive: {
+    //         1280: {
+    //             items: 4,
+    //         },
+    //         768: {
+    //             items: 3,
+    //         },
+    //         520: {
+    //             items: 2,
+    //         },
+    //         0: {
+    //             items: 1,
+    //         },
+    //     }
+    // });
 
     //App Slider
 
-    $("#app-slider").owlCarousel({
-        items: 1,
-        loop: true,
-        dots: false,
-        nav: false,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        autoplay: false,
-        autoplayTimeout: 5000,
-        // mouseDrag:false,
-        responsive: {
-            1280: {
-                items: 1,
-            },
-            600: {
-                items: 1,
-            },
-            320: {
-                items: 1,
-            },
-        }
-    });
+    // $("#app-slider").owlCarousel({
+    //     items: 1,
+    //     loop: true,
+    //     dots: false,
+    //     nav: false,
+    //     animateOut: 'fadeOut',
+    //     animateIn: 'fadeIn',
+    //     autoplay: false,
+    //     autoplayTimeout: 5000,
+    //     // mouseDrag:false,
+    //     responsive: {
+    //         1280: {
+    //             items: 1,
+    //         },
+    //         600: {
+    //             items: 1,
+    //         },
+    //         320: {
+    //             items: 1,
+    //         },
+    //     }
+    // });
+
     $('.app-slider-lock-btn').on('click' , function () {
         $('.app-slider-lock').fadeToggle(600);
     });
 
     /*Services Box Slider*/
-    $("#services-slider").owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 6000,
-        autoplayHoverPause: true,
-        smartSpeed: 1200,
-        loop: true,
-        nav: false,
-        navText: false,
-        dots: false,
-        mouseDrag: true,
-        touchDrag: true,
-        center: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            640: {
-                items: 3
-            }
-        }
-    });
-    //service detail
-    $("#service-detail").owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        smartSpeed: 1200,
-        loop: true,
-        nav: false,
-        dots: false,
-        mouseDrag: true,
-        touchDrag: true,
-        margin: 15,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            640: {
-                items: 2,
-            }
-        }
-    });
+    // $("#services-slider").owlCarousel({
+    //     autoplay: true,
+    //     autoplayTimeout: 6000,
+    //     autoplayHoverPause: true,
+    //     smartSpeed: 1200,
+    //     loop: true,
+    //     nav: false,
+    //     navText: false,
+    //     dots: false,
+    //     mouseDrag: true,
+    //     touchDrag: true,
+    //     center: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         640: {
+    //             items: 3
+    //         }
+    //     }
+    // });
+    // //service detail
+    // $("#service-detail").owlCarousel({
+    //     autoplay: true,
+    //     autoplayTimeout: 3000,
+    //     autoplayHoverPause: true,
+    //     smartSpeed: 1200,
+    //     loop: true,
+    //     nav: false,
+    //     dots: false,
+    //     mouseDrag: true,
+    //     touchDrag: true,
+    //     margin: 15,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         640: {
+    //             items: 2,
+    //         }
+    //     }
+    // });
     var owl6 = $('.owl-blog-item');
     owl6.owlCarousel({
         loop: true,
