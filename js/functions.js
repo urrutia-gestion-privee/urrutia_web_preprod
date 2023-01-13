@@ -883,28 +883,28 @@ jQuery($=> {
 
     //App Slider
 
-    // $("#app-slider").owlCarousel({
-    //     items: 1,
-    //     loop: true,
-    //     dots: false,
-    //     nav: false,
-    //     animateOut: 'fadeOut',
-    //     animateIn: 'fadeIn',
-    //     autoplay: false,
-    //     autoplayTimeout: 5000,
-    //     // mouseDrag:false,
-    //     responsive: {
-    //         1280: {
-    //             items: 1,
-    //         },
-    //         600: {
-    //             items: 1,
-    //         },
-    //         320: {
-    //             items: 1,
-    //         },
-    //     }
-    // });
+    $("#app-slider").owlCarousel({
+        items: 1,
+        loop: true,
+        dots: false,
+        nav: false,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplay: false,
+        autoplayTimeout: 5000,
+        // mouseDrag:false,
+        responsive: {
+            1280: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            320: {
+                items: 1,
+            },
+        }
+    });
 
     $('.app-slider-lock-btn').on('click' , function () {
         $('.app-slider-lock').fadeToggle(600);

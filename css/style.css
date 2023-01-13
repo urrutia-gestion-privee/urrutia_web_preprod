@@ -3063,7 +3063,7 @@ a.dropdown-toggle::after {
 }
 
 .about-header {
-    background: url(../images/bg-about-header.jpg) no-repeat;
+    background: url(../images/banner1-4.jpg) no-repeat;
 }
 
 .startup-header {
@@ -3263,7 +3263,9 @@ iframe {
     display: inline-block;
 }
 
-
+.aboutlink {
+    margin-left: 2em;
+}
 /*Service Slider*/
 
 #services-slider {
