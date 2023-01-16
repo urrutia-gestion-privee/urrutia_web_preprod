@@ -3032,6 +3032,13 @@ a.dropdown-toggle::after {
     -moz-background-size: cover; 
     -o-background-size: cover;  
     background-size: cover !important;
+    height: 90vh;
+}
+
+@media screen and (max-width: 480px) {
+    .urrutia-header {
+        height: 80vh;
+    }
 }
 
 .bg-parallax-1 {
@@ -6167,12 +6174,12 @@ ul.count_down.white li p:nth-child(2) {
 }
 
 .pricing-item.active {
-    background: #26313c;
+    background: #011C34;
 }
 
 .pricing-item.active .button {
     border-color: #fff;
-    background: #26313c;
+    background: #011C34;
     transition: 0.2s all;
 }
 
