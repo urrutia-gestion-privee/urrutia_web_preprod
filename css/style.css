@@ -3037,7 +3037,7 @@ a.dropdown-toggle::after {
 
 @media screen and (max-width: 480px) {
     .urrutia-header {
-        height: 7vh;
+        height: 75vh;
     }
 }
 
