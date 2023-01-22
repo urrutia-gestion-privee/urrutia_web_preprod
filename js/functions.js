@@ -87,7 +87,7 @@ jQuery($=> {
             }, 'json');
 
         } else {
-            output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">Veuillez remplir l\'ensemble des champs."</div>';
+            output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">Veuillez remplir l\'ensemble des champs.</div>';
             result.slideUp("fast").html(output).slideDown();
         }
 
