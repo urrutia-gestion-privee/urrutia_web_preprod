@@ -32,6 +32,7 @@ jQuery($=> {
     $("#submit_btn1 , #submit_btn").on('click', function () {
         let userName = $('#name1').val();
         let userEmail = $('#email1').val();
+        let userPhone = $('#phone1').val();
         let userMessage = $('#message1').val();
         let result;
         if(this.id === 'submit_btn'){
@@ -39,6 +40,7 @@ jQuery($=> {
             userMessage = $('#companyName').val();
             userName = $('#userName').val();
             userEmail = $('#email').val();
+            userPhone = $('#phone1').val();
         }
         else{
             result = $('#result1');
@@ -52,6 +54,9 @@ jQuery($=> {
         if (userEmail === "") {
             proceed = false;
         }
+        if (userPhone === "") {
+            proceed = false;
+        }
         if (userMessage === "") {
             proceed = false;
         }
@@ -60,29 +65,29 @@ jQuery($=> {
 
             //data to be sent to server
             postData = {
-                'userName': userName,
-                'userEmail': userEmail,
-                'userMessage': userMessage
+                email: userEmail,
+                name: userName,
+                phone: userPhone,
+                message: userMessage
             };
 
             //Ajax post data to server
-            $.post('contact.php', postData, function (response) {
+            $.post('https://formsubmit.co/ajax/contact@urrutia.fr', postData, function (response) {
                 //load json data from server and output message
                 if (response.type === 'error') {
-                    output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">' + response.text + '</div>';
+                    output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">' + "Une erreur s'est produite." + '</div>';
                 } else {
-                    output = '<div class="alert-success" style="padding:10px; margin-bottom:25px;">' + response.text + '</div>';
+                    output = '<div class="alert-success" style="padding:10px; margin-bottom:25px;">' + "Message envoyé !" + '</div>';
                     //reset values in all input fields
                     $('.getin_form input').val('');
                     $('.getin_form textarea').val('');
-
                 }
 
                 result.slideUp("fast").html(output).slideDown();
             }, 'json');
 
         } else {
-            output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">Please provide the missing fields.</div>';
+            output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">Veuillez remplir l\'ensemble des champs."</div>';
             result.slideUp("fast").html(output).slideDown();
         }
 
